@@ -7,16 +7,19 @@ description: 对JavaScript闭包的认识和理解
 ---
 ## 1.闭包是什么?
  [MDN](https://developer.mozilla.org/zh-CN/) 上对闭包(closure)的定义为
+
 > Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope). In other words, these functions 'remember' the environment in which they were created.
 
 意思就是：
+
 > 闭包是指那些能够访问独立(自由)变量的函数 (变量在本地使用，但定义在一个封闭的作用域中)。换句话说，这些函数可以“记忆”它被创建时候的环境。
 
 ## 2.闭包的优点有哪些？
 闭包的特点是函数嵌套函数，内部函数可以引用外部函数的参数和变量。参数和变量不会被[垃圾回收](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management)机制所收回。
 见下面的例1:
-```javascript
-function foo(a){
+
+```
+    function foo(a){
 	var a = 123;
 	return function fo(){
 		alert(a);	
