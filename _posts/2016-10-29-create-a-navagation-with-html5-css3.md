@@ -6,7 +6,7 @@ tags: [html5, css3,navigation]
 description: 使用HTML5和CSS3创建下拉导航菜单
 ---
 
-####这次我将带来一个实用帖：使用**html5**和**css3**创建自己哒下拉导航条。
+这次我将带来一个实用帖：使用**html5**和**css3**创建自己哒下拉导航条。
 
 原文出处：[Create a Drop-Down Navigation Menu with HTML5 and CSS3](https://deliciousthemes.com/create-a-drop-down-navigation-menu-with-html5-and-css3/)
 
@@ -23,7 +23,8 @@ description: 使用HTML5和CSS3创建下拉导航菜单
 
 我们通过构建CSS来控制悬停时下拉框的隐藏和显示，并且使用新的CSS3过渡（transition）功能。 这些效果完全像你以前使用的JavaScript效果。 文档结构简单。 你需要一个index.html和一个类似style.css的样式文件即可。
 
-####让我们从HTML结构开始吧。 这是头部：
+让我们从HTML结构开始吧。 这是头部：
+
 ```
 <!doctype html>
 <html lang="en>
@@ -42,9 +43,10 @@ description: 使用HTML5和CSS3创建下拉导航菜单
 </head>
 ```
 
-####在body部分，我们为`nav`添加html代码。 `li`中的每个`ul`是一个下拉菜单。 我们向每个父`li`添加`»(&raquo;)`以显示层次结构。
+在body部分，我们为`nav`添加html代码。 `li`中的每个`ul`是一个下拉菜单。 我们向每个父`li`添加`»(&raquo;)`以显示层次结构。
 
 ```
+
 <body>
 <nav id="nav">
 	<ul id="navigation">
@@ -163,6 +165,7 @@ ul#navigation li:hover > a {
 注意`ul＃navigation li a`有一些转换(transition)样式。 它们可以创建一个很好的悬停效果。
 
 现在，让我们对下拉菜单进行风格化吧。
+
 ```
 /*下拉导航*/
 ul#navigation li:hover > ul
