@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于 href="javascript:; 到底做了什么
+title: 关于 href="javascript:;" 到底做了什么
 categories: [blog ]
 tags: [JavaScript, html,]
 description: 对a标签的新的认识和理解
@@ -8,7 +8,7 @@ description: 对a标签的新的认识和理解
 
 这几天正在仿写一个网站demo，有些细节地方想不明白就查看了网站码源学习学习，愕然发现自己的`<a>`标签与源码诸多不同，虽然之前就看过很多的网站的代码都有这个`<a href="javascript:;"></a>`或这个`<a href="javascript:void(0);></a>"`，但还是产生了疑问：
 
-1.这种写法的作用是什么？
+1.这种写法的作用是什么？<br>
 2.为什么这样写？
 
 于是随手Google之，排名第一的是[张鑫旭](http://www.zhangxinxu.com/wordpress/2013/01/why-use-href-javascript-void0/)大神的一篇文章，第二个就是在[stackoverflow](http://stackoverflow.com/questions/7755088/what-does-href-expression-a-href-javascript-a-do)上的问答。
