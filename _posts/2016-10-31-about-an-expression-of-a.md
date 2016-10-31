@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 关于<a href="javascript:;"></a>到底做了什么
+title: 关于 href="javascript:; 到底做了什么
 categories: [blog ]
 tags: [JavaScript, html,]
 description: 对a标签的新的认识和理解
 ---
+
 这几天正在仿写一个网站demo，有些细节地方想不明白就查看了网站码源学习学习，愕然发现自己的`<a>`标签与源码诸多不同，虽然之前就看过很多的网站的代码都有这个`<a href="javascript:;"></a>`或这个`<a href="javascript:void(0);></a>"`，但还是产生了疑问：
 
 1.这种写法的作用是什么？
