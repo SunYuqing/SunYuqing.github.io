@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于`<a href="javascript:;">`到底做了什么
+title: 关于<a href="javascript:;"></a>到底做了什么
 categories: [blog ]
 tags: [JavaScript, html,]
 description: 对a标签的新的认识和理解
