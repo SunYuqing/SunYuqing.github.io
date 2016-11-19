@@ -47,6 +47,7 @@ function factorialize(num) {
 
 factorialize(5);
 ```
+
 ## Check for Palindromes 
 
 >如果给定的字符串是回文，返回true，反之，返回false。
@@ -173,6 +174,7 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
 
 另外一种解法：
+
 ```
 unction destroyer(arr) 
   var args = [];
@@ -222,8 +224,8 @@ function repeat(str, num) {
 repeat("abc", 3);
 
 ```
-
 ## Truncate a string 
+
 >用瑞兹来截断对面的退路!
 >截断一个字符串！
 >如果字符串的长度比指定的参数num长，则把多余的部分用...来表示。
@@ -246,6 +248,7 @@ unction truncate(str, num) {
 }
 
 truncate("A-tisket a-tasket A green and yellow basket", 11);
+
 ```
 
 ## Mutations
@@ -310,6 +313,7 @@ function where(arr, num) {
 }
 
 where([40, 60], 50);
+
 ```
 
 ## Caesars Cipher 
