@@ -5,11 +5,12 @@ categories: [blog ]
 tags: [JavaScript, Algorithm,]
 description: 数组，字符串的常见方法及基本算法
 ---
-最近知道了一个学习前端的好去处，[FreeFodeCamp](www.freecodecamp.com),里面资源很全，有很多实战的项目且都是开源公益性质的，前后端，数据库都有，社区很活跃而且学完他们某一分类的完整教程后给你授发证书，当然证书的作用在中国可能不大。这几天才知道FreeFodeCamp也有[中文网](www.freecodecamp.cn),貌似没有区别，就是打开速度稍慢。
+最近知道了一个学习前端的好去处，[FreeFodeCamp](www.freecodecamp.com),里面资源很全，有很多实战的项目且都是开源公益性质的，前后端，数据库都有，社区很活跃而且学完他们某一分类的完整教程后会给你授发证书，当然证书的作用在中国可能不大。FreeFodeCamp也有[中文网](www.freecodecamp.cn),貌似内容没有区别，就是打开速度稍慢。
 
-下面是我挑选[FreeFodeCamp](www.freecodecamp.com)一个系列课程中总结的关于数组，字符串一些常用方法。在[FreeFodeCamp](www.freecodecamp.com)里这节课叫做 Basic Algorithm Scripting，即为基本算法。
+下面是我挑选的[FreeFodeCamp](www.freecodecamp.com)一个系列课程中关于数组，字符串一些常用方法。在[FreeFodeCamp](www.freecodecamp.com)里这节课叫做 Basic Algorithm Scripting，即为基本算法。
 
-##Reverse a String
+## Reverse a String
+
 >翻转字符串
 
 >先把字符串转化成数组，再借助数组的reverse方法翻转数组顺序，最后把数组转化成字符串。
@@ -17,7 +18,8 @@ description: 数组，字符串的常见方法及基本算法
 >你的结果必须得是一个字符串
 
 解决方法：
-```
+
+```JavaScript
 function reverseString(str) {
   var str1=str.split("");
   return str1.reverse().join("");
@@ -27,7 +29,8 @@ function reverseString(str) {
 reverseString("hello");
 ```
 
-##Factorialize a Number 
+## Factorialize a Number 
+
 >计算一个整数的阶乘
 
 >如果用字母n来代表一个整数，阶乘代表着所有小于或等于n的整数的乘积。
@@ -49,7 +52,8 @@ function factorialize(num) {
 
 factorialize(5);
 ```
-##Check for Palindromes 
+## Check for Palindromes 
+
 >如果给定的字符串是回文，返回true，反之，返回false。
 
 >如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是palindrome(回文)。
@@ -69,7 +73,8 @@ function palindrome(str) {
 palindrome("eye");
 ```
 
-##Find the Longest Word in a String 
+## Find the Longest Word in a String 
+
 >找到提供的句子中最长的单词，并计算它的长度。
 
 >函数的返回值应该是一个数字。
@@ -93,7 +98,8 @@ function findLongestWord(str) {
 findLongestWord("The quick brown fox jumped over the lazy dog");
 ```
 
-##Title Case a Sentence 
+## Title Case a Sentence 
+
 >确保字符串的每个单词首字母都大写，其余部分小写。
 
 >像'the'和'of'这样的连接符同理。
@@ -115,7 +121,8 @@ function titleCase(str) {
 titleCase("I'm a little tea pot");
 ```
 
-##Return Largest Numbers in Arrays 
+## Return Largest Numbers in Arrays 
+
 >右边大数组中包含了4个小数组，分别找到每个小数组中的最大值，然后把它们串联起来，形成一个新数组。
 
 >提示：你可以用for循环来迭代数组，并通过arr[i]的方式来访问数组的每个元素。
@@ -135,7 +142,7 @@ function largestOfFour(arr) {
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ```
 
-##Chunky Monkey
+## Chunky Monkey
 
 >把一个数组arr按照指定的数组大小size分割成若干个数组块。
 
@@ -155,12 +162,14 @@ function chunk(arr, size) {
 }
 chunk(["a", "b", "c", "d"], 2);
 ```
-##Seek and Destroy
+
+## Seek and Destroy
 
 >实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值。
 >例如：
 >destroyer([1, 2, 3, 1, 2, 3], 2, 3) 应该返回 [1, 1].
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3) 应该返回 [1, 5, 1].
+
 ```
 function destroyer(arr) {
   var args = Array.prototype.slice.call(arguments);
@@ -190,7 +199,8 @@ unction destroyer(arr)
 
 ```
 
-##Confirm the Ending 
+## Confirm the Ending 
+
 >检查一个字符串(str)是否以指定的字符串(target)结尾。
 
 >如果是，返回true;如果不是，返回false。
@@ -206,7 +216,8 @@ confirmEnding("Bastian", "n");
 	
 ```
 
-##Repeat a string repeat a string 
+## Repeat a string repeat a string 
+
 >重要的事情说3遍！
 
 >重复一个指定的字符串 num次，如果num是一个负数则返回一个空字符串。
@@ -226,7 +237,7 @@ repeat("abc", 3);
 
 ```
 
-##Truncate a string 
+## Truncate a string 
 >用瑞兹来截断对面的退路!
 
 >截断一个字符串！
@@ -255,7 +266,8 @@ unction truncate(str, num) {
 truncate("A-tisket a-tasket A green and yellow basket", 11);
 ```
 
-##Mutations 
+## Mutations
+
 >蛤蟆可以吃队友，也可以吃对手。
 
 >如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。
@@ -282,7 +294,8 @@ function mutation(arr) {
 mutation(["hello", "hey"]);
 ```
 
-##Falsy Bouncer 
+## Falsy Bouncer 
+
 >真假美猴王！
 
 >删除数组中的所有假值。
@@ -300,7 +313,8 @@ bouncer([7, "ate", "", false, 9]);
 
 ```
 
-##Where do I belong 
+## Where do I belong 
+
 >我身在何处？
 
 >先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。
@@ -324,7 +338,8 @@ function where(arr, num) {
 where([40, 60], 50);
 ```
 
-##Caesars Cipher 
+## Caesars Cipher 
+
 >让上帝的归上帝，凯撒的归凯撒。
 
 >下面我们来介绍风靡全球的凯撒密码Caesar cipher，又叫移位密码。
