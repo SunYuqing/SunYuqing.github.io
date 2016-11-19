@@ -213,6 +213,7 @@ confirmEnding("Bastian", "n");
 解决方案：
 
 ```
+
 function repeat(str, num) {
   var l=[];
   while(l.length<num){
@@ -224,6 +225,8 @@ function repeat(str, num) {
 repeat("abc", 3);
 
 ```
+
+>
 ## Truncate a string 
 
 >用瑞兹来截断对面的退路!
@@ -349,9 +352,6 @@ function rot13(str) {
 
 rot13("SERR PBQR PNZC");
 ```
-
-> Written with [StackEdit](https://stackedit.io/).
-
 
 
 > Written with [StackEdit](https://stackedit.io/).
