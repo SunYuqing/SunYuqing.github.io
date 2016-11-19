@@ -5,7 +5,7 @@ categories: [blog ]
 tags: [JavaScript, Algorithm,]
 description: 数组，字符串的常见方法及基本算法
 ---
-最近知道了一个学习前端的好去处，[FreeFodeCamp](www.freecodecamp.com),里面资源很全，有很多实战的项目且都是开源公益性质的，前后端，数据库都有，社区也很活跃。FreeFodeCampc崇尚的是*Read-Search-Ask'*，即遇到问题时查文档，Google之，社区询问之。FreeFodeCamp也有[中文网](www.freecodecamp.cn),貌似内容没有区别，就是打开速度稍慢。
+最近知道了一个学习前端的好去处，[FreeFodeCamp](www.freecodecamp.com),里面资源很全，有很多实战的项目且都是开源公益性质的，前后端，数据库都有，社区也很活跃。FreeFodeCampc崇尚的是**Read-Search-Ask**，即遇到问题时查文档，Google之，社区询问之。FreeFodeCamp也有[中文网](www.freecodecamp.cn),貌似内容没有区别，就是打开速度稍慢。
 
 下面是我挑选的[FreeFodeCamp](www.freecodecamp.com)一个系列课程中关于数组，字符串一些算法，这些解决方案一些是自己想的，一些是Google和stackover上的。在[FreeFodeCamp](www.freecodecamp.com)里这节课叫做 Basic Algorithm Scripting，即为基本算法。
 
