@@ -162,9 +162,9 @@ chunk(["a", "b", "c", "d"], 2);
 ```
 function destroyer(arr) {
   var args = Array.prototype.slice.call(arguments);
-  args.splice(0,1);
+  args.splice(0,1);//删除args中的第一个数组
   return arr.filter(function(element) {
-   //逆向思维 :filter会遍历element中的每个元素，（注释：element为args中的元素）然后经过filter函数
+   //逆向思维 :filter会遍历element中的每个元素，（注释：element为arr中的元素）然后经过filter函数
     //返回后为true的会加入到一个数组里返回。所有不是待摧毁的值会被返回回来。
     return args.indexOf(element) === -1;
    // alert(element);
