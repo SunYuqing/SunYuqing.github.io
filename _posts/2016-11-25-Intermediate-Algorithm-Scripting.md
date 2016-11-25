@@ -34,7 +34,9 @@ function sumAll(arr) {
 
 sumAll([1, 4]);
 ```
+
 ## Diff Two Arrays
+
 >比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。
 
 ```
@@ -113,7 +115,7 @@ function myReplace(str, before, after) {
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 ```
 
-##Pig Latin
+## Pig Latin
 >把指定的字符串翻译成 pig latin。
 >Pig Latin 把一个英文单词的第一个辅音或辅音丛（consonant cluster）移到词尾，然后加上后缀 "ay"。
 >如果单词以元音开始，你只需要在词尾添加 "way" 就可以了。
@@ -173,6 +175,7 @@ function fearNotLetter(str) {
 
 fearNotLetter("abcg");
 ```
+
 ## Sorted Union
 >写一个 function，传入两个或两个以上的数组，返回一个以给定的原始数组排序的不包含重复值的新数组。
 >换句话说，所有数组中的所有值都应该以原始顺序被包含在内，但是在最终的数组中不包含重复值。
@@ -191,6 +194,7 @@ function unite(arr1, arr2, arr3) {
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 ```
+
 ## Convert HTML Entities
 >将字符串中的字符 &、<、>、" （双引号）, 以及 ' （单引号）转换为它们对应的 HTML 实体。
 
@@ -238,6 +242,7 @@ function spinalCase(str) {
 
 spinalCase('This Is Spinal Tap');
 ```
+
 ## Sum All Odd Fibonacci Numbers
 >给一个正整数num，返回小于或等于num的斐波纳契奇数之和。
 >斐波纳契数列中的前几个数字是 1、1、2、3、5 和 8，随后的每一个数字都是前两个数字之和。
@@ -329,6 +334,7 @@ function smallestCommons(arr) {
 }
 smallestCommons([1,5]);
 ```
+
 ## Drop it
 >让我们来丢弃数组(arr)的元素，从左边开始，直到回调函数return true就停止。
 >第二个参数，func，是一个函数。用来测试数组的第一个元素，如果返回fasle，就从数组中抛出该元素(注意：此时数组已被改变)，继续测试数组的第一个元素，如果返回fasle，继续抛出，直到返回true。
@@ -368,6 +374,7 @@ function steamroller(arr){
 steamroller([1, [2], [3, [[4]]]]);
 
 ```
+
 ## Binary Agents
 >传入二进制字符串，翻译成英语句子并返回。
 >二进制字符串是以空格分隔的。
