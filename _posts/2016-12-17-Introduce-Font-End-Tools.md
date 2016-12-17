@@ -6,7 +6,7 @@ tags: [data, ]
 description: 关于前端的资料，有工具学习方法等
 ---
 
-接触前端时间越长，收集的前端工具和学习的资料就越多。所以今天就好好地整理出来，便于日后的使用，也会随着时间的推移和经验的积累更新这些资料。
+接触前端时间越长，收集的前端工具和学习的资料就越多。所以今天就好好地整理出来，便于日后的使用，也会随着时间的推移和经验的积累不断更新这些资料。
 
 
 ## 博客篇
@@ -54,20 +54,25 @@ javascript方面的专家，额，这么说感觉怪怪的，不过确实这位�
 ## 工具篇
 
 [caniuse](http://caniuse.com/)
+
 这个大家应该知道，由于浏览器的历史遗留问题我们不得不考虑兼容性。这个网站就是查询各个元素等浏览器支持情况滴。
 
 [PEXELS](https://www.pexels.com)
+
 一个图片分享网站，图片精美而且是免费的，个人非常喜欢。里面的图片你可以下载下来也可以在线引用。
 
 [字体图标]()
+
 这个有很多种选择，有[GoogleFonts](https://fonts.google.com/),阿里巴巴的[IconFont](http://www.iconfont.cn/plus),还有精美的[Font Awesome Icons](http://fontawesome.io/icons/)等大部分都可以免费使用。
 
 [设计类]()
+
 有关于配色的[Color Hunt](http://colorhunt.co/hot),有进行icon转换为png，jpg等格式的[easyicon](http://www.easyicon.net/iconsearch/ios/),关于设计的更多内容推荐[黄蜂网](http://woofeng.cn/articles/WebCode/)
 
 [在线编辑]()
-[codepen](https://codepen.io/),在线编辑实时显示和引用各类库，这是我的[主页](https://codepen.io/SunYuqing/)。[JSFIFFLE](https://jsfiddle.net/)也是同类的一种在线编辑器。[StackEdit](https://stackedit.io)则是一款在线makedown编辑器，我的所有博客都是在这里完成的，实时预览还能自动保存，功能很实用很强大。[asciiflow](http://asciiflow.com/)是在线作图的一种在线编辑器，免费且实用。
+
+[codepen](https://codepen.io/),在线编辑实时显示和引用各类库，这是我的[codefen主页](https://codepen.io/SunYuqing/)。[JSFIFFLE](https://jsfiddle.net/)也是同类的一种在线编辑器。[StackEdit](https://stackedit.io)则是一款在线makedown编辑器，我的所有博客都是在这里完成的，实时预览还能自动保存，功能很实用很强大。[asciiflow](http://asciiflow.com/)是在线作图的一种在线编辑器，免费且实用。
 
 ## 问答篇
 
-Google，StackOverflow，segmentfault，github，知乎，掘金等都是可以向他人请教的地方，coder们都很乐于分享和帮助他人解决问题。我在StackOverflow上问的问题几分钟就会有人回答，所以放心大胆的问吧，只要你把问题描述的清楚，没有人会嘲笑你的问题是否低级。当然翻墙也是必不可少的姿势，墙外的世界很精彩，翻墙姿势有蓝灯，ishadowsocks等，我都有用过。这类教程简书和知乎有很多就不介绍了。
+[Google]()，[StackOverflow]()，[segmentfault]()，[github]()，[知乎]()，[掘金]()等都是可以向他人请教的地方，coder们都很乐于分享和帮助他人解决问题。我在StackOverflow上问的问题几分钟就会有人回答，所以放心大胆的问吧，只要你把问题描述的清楚，没有人会嘲笑你的问题是否低级。当然翻墙也是必不可少的姿势，墙外的世界很精彩，翻墙姿势有蓝灯，ishadowsocks等，我都有用过。这类教程简书和知乎有很多就不介绍了。
