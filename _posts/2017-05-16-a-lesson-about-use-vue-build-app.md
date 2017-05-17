@@ -51,7 +51,7 @@ $ npm install vue-chartjs chart.js axios --save
 
 ## 开始搭建了
 
-声明：本教程不关注样式,默认对于样式你可以靠自己搞定。本教程只关注`javascript` 相关代码。
+声明：本教程只关注`javascript` 相关代码，不关注具体样式,默认对于样式你可以靠自己搞定，你也可以到我的[代码库](https://github.com/sunyuqing/npm-stats)查看样式的实现。
 
 #### 组件
 
