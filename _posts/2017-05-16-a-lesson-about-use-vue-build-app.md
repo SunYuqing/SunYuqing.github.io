@@ -12,7 +12,7 @@ description: 一个关于如何使用Vue建立一个web app的教程
 
 ## 让我们快点开始吧 
 
-#### 技术栈：
+### 技术栈：
 
 *	vue.js
 *	Chart.js
@@ -53,7 +53,7 @@ $ npm install vue-chartjs chart.js axios --save
 
 声明：本教程只关注`javascript` 相关代码，不关注具体样式,默认对于样式你可以靠自己搞定，你也可以到我的[代码库](https://github.com/sunyuqing/npm-stats)查看样式的实现。
 
-#### 组件
+### 组件
 
 下面这些是我们需要创建的组件：
 
@@ -87,7 +87,7 @@ props: {
 
 [lienChart.vue 代码段](https://gist.github.com/apertureless/bc973fe1b2ea7803a195a5d282ae1827)
 
-#### 启动页
+#### start
 我们的lienChart组件已经完成了，接下来要进行下一步。在页面中我们需要一个输入框和一个按钮来提交需要查询的package名称，发起请求，并向chart组件传递数据。
 
 先思考一下我们需要的是什么样的数据和状态/数据模型。首先需要一个package数据模型，我们使用v-model来绑定数据。我们还将使用package的名称作为标题，把它定义为packageName。然后我们用两个数组用于记录请求数据下载和标签。若请求出错，我们需要调用这两个函数errorMessage和showError。最后我们需要在请求成功后才加载图表。
@@ -155,7 +155,7 @@ data () {
 
 [start-01代码段](https://gist.github.com/apertureless/8f97ddc6a865c0063b581bb807f0b209)
 
-#### JavaScript
+## JavaScript
 
 现在要开始编码了。首先我们来完善requestData()方法。
 
