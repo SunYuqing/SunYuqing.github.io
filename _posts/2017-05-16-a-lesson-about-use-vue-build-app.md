@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 让我们使用Vue,chart.js来建一个Web App吧
+title: 让我们使用Vue来建一个Web App吧
 categories: [blog ]
 tags: [vue, ]
 description: 一个关于如何使用Vue建立一个web app的教程
