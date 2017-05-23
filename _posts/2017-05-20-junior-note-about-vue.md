@@ -14,7 +14,7 @@ description: 一个关于如何使用Vue建立一个web app的教程
 注意只有这些被data代理的属性是响应的。如果在实例创建之后添加新的属性到实例上，它不会触发视图更新。
 你得在new之前，就把所有的data都传进去。实例创建之后，其实可以使用`$set`来加入属性，也可以实现响应功能。
 	
-### 2.`app.$data/ $el`
+### 2.app.$data/ $el
 
 Vue 实例暴露了一些有用的实例属性与方法。这些属性与方法都有前缀 $，以便与代理的 data 属性区分。
 	
@@ -29,7 +29,7 @@ Vue 实例暴露了一些有用的实例属性与方法。这些属性与方法�
 
 ### 4.计算属性
 
-所谓计算属性，就是跟ES5的getter一样的，用function来定义个属性，当你获取这个属性的时候，实际上是要执行这个function，执行function的过程就是计算过程，所以也就叫计算属性。所有的计算属性被放computed里面，computed和data, methods同级。
+所谓计算属性，就是跟ES5的getter一样的，用function来定义个属性，当你获取这个属性的时候，实际上是要执行这个function，执行function的过程就是计算过程，所以也就叫计算属性。所有的计算属性被放在computed里面，computed和data, methods同级。
 
 ### 5. computed **VS**  methods
 
@@ -51,6 +51,8 @@ Vue 实例暴露了一些有用的实例属性与方法。这些属性与方法�
 
 	我们为什么需要缓存？假设我们有一个性能开销比较大的的计算属性 A ，它需要遍历一个极大的数组和做大量的计算。
 	然后我们可能有其他的计算属性依赖于 A 。如果没有缓存，我们将不可避免的多次执行 A 的 getter！如果你不希望有缓存，请用 method 替代。
+
+
 ### 6.watch属性
 
 watch是和data, methods, computed同级的一个参数，你可以在watch里面规定你要watch的属性，当这些属性发生变化的时候，它会执行对应的那个函数。栗子：
@@ -78,16 +80,18 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	*  `<div v-show="is"></div>`
 	* is为false的时候，会给这个元素加一个display:none，仅仅是隐藏这个元素，不会有dom的消耗。
 * v-for
-	* ```<div v-for="item in items"></div>
+```
+		 <div v-for="item in items"></div>
 		 <div v-for="(item, index) in items"></div>
 		 <div v-for="(val, key) in object"></div>
-		<div v-for="(val, key, index) in object"></div>	 
-	```
+		 <div v-for="(val, key, index) in object"></div>	 
+```
 	* v-for 默认行为试着不改变整体，而是替换元素。迫使其重新排序的元素,需要提供一个 key 的特殊属性:
 	* ```<div v-for="item in items" :key="item.id">{{ item.text }}</div>
 	```
 * v-bind / :
-	* ``` <!-- 绑定一个属性 -->
+```
+	<!-- 绑定一个属性 -->
 	<img v-bind:src="imageSrc">
 	<!-- 缩写 -->
 	 <img :src="imageSrc">
@@ -106,8 +110,10 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	<div v-bind:text-content.prop="text"></div>
 	<!-- prop 绑定. “prop” 必须在 my-component 中声明。 -->
 	<my-component :prop="someThing"></my-component>
-	``` 
-	* 动态地绑定一个或多个attr或prop属性。简单的说就是，通过v-bind绑定一个属性，这个属性可以是html原本有的，也可以是某些特殊的，绑定的表达式的值赋值给这个属性。
+``` 
+
+	* 动态地绑定一个或多个attr或prop属性。简单的说就是，通过v-bind绑定一个属性，
+	这个属性可以是html原本有的，也可以是某些特殊的，绑定的表达式的值赋值给这个属性。
 	
 	* 在绑定 class 或 style 特性时，支持其它类型的值，如数组或对象。
 
@@ -115,7 +121,8 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 
 	* 没有参数时，可以绑定到一个包含键值对的对象。注意此时 class 和 style 绑定不支持数组和对象。
 * v-on / @ 
-	* ```<!-- 方法处理器 -->
+```
+	<!-- 方法处理器 -->
 	<button v-on:click="doThis"></button>
 	<!-- 内联语句 -->
 	<button v-on:click="doThat('hello', $event)"></button>
@@ -135,7 +142,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	<input @keyup.13="onEnter">
 	<!-- 点击回调只会触发一次 -->
 	<button v-on:click.once="doThis"></button>
-	 ```
+```
 	
 	* 绑定事件监听器。事件类型由参数指定。表达式可以是一个方法的名字或一个内联语句，如果没有修饰符也可以省略。
 	
@@ -147,7 +154,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 		* .prevent - 调用 event.preventDefault()。
 		* .capture - 添加事件侦听器时使用 capture 模式。
 		* .self - 只当事件是从侦听器绑定的元素本身触发时才触发回调。
-		* .{keyCode | keyAlias} - 只当事件是从特定键触发时才触发回调。
+		* `.{keyCode | keyAlias}` - 只当事件是从特定键触发时才触发回调。
 		* .native - 监听组件根元素的原生事件。
 		* .once - 只触发一次回调。
 		* .left - (2.2.0) 只当点击鼠标左键时触发。
@@ -164,13 +171,14 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	* 这个指令有的时候非常有用。比如一些组件并不需要跟着数据变化而变化的时候。 
 * v-cloak
 	* 这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 `[v-cloak] { display: none } `一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。 
-	* ```[v-cloak] {
+```
+	[v-cloak] {
 		  display: none;
 	}
 	<div v-cloak>
 		  {{ message }}
 	</div>
-	```
+```
 	* 编译结束的时候，就把这个属性移除掉。所以上面那个css，使得这些有v-cloak属性的元素全部先隐藏起来，最后当v-cloak被移除的时候，这些元素就显示出来了。为什么要有这么一个奇怪的属性呢？因为你要知道，{{message}}在原始的html中是字符串，是会显示在界面中的。如果你的浏览器编译模板速度慢，或者用户网速慢，vue代码半天没加载完，那么用户就会看到这些奇怪的{{}}，而如果使用一个v-cloak属性，就可以把这些内容事先隐藏起来，不让用户看到。
 	
 ### 8. 自定义事件
@@ -181,12 +189,13 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 
 	*  **`$on`**
 		* 监听当前实例上的自定义事件。事件可以由vm.$emit触发。回调函数会接收所有传入事件触发函数的额外参数。
-		*  ```vm.$on('test', function (msg) {
+```
+		vm.$on('test', function (msg) {
 			  console.log(msg)
 			})
 			vm.$emit('test', 'hi')
 			// -> "hi"
-			```
+```
 	* **`$once`**
 		* 监听一个自定义事件，但是只触发一次，在第一次触发之后移除监听器。
 	> `$on`和`$once`绑定的事件是在实例上，而非DOM元素上，所以它们跟DOM原生的事件是两回事。DOM原生事件是在触发DOM元素特定事件时被触发的，比如`click`。但是对于这里的实例`vm`而言，`click`没有来源，实例根本不存在被`click`之说，所以`$on`和`$once`跟DOM原生事件扯不上任何关系。同理，`$emit`也是作用于实例之上，既然实例跟原生的DOM事件扯不上关系，那么`$emit`也就跟原生DOM事件扯不上关系了。
@@ -197,7 +206,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 			* 如果没有提供参数，则移除所有的事件监听器；
 			* 如果只提供了事件，则移除该事件所有的监听器；
 			* 如果同时提供了事件与回调，则只移除这个回调的监听器。
-	* **`$emit` **
+	* **$emit**
 		* 触发当前实例上的事件。附加参数都会传给监听器回调。 
 
 ### 9.组件
@@ -323,12 +332,19 @@ Vue.component('child', {
   },
 })
 ```
+
 在父组件中才可以这样使用：
+
 ```
 <child v-model="someData"></child>
-// 等价于：
+```
+
+等价于：
+
+```
 <child :value="someData" @input="someData = $event.target.value"></child>
 ```
+
 蓝色部分表示的是v-bind部分，红褐色部分表示v-on部分。组件内部，绿色的keyup是input元素的DOM原生事件，红色的udpate是回调函数，当keyup的时候执行update()，而update()的时候就`$emit('input')`，触发了父组件的`v-on:input`。
 
 基于这种原理，不一定要使用在input输入框上，实际上，任何元素都可以模拟这种方式实现数据双向绑定。当然，如果没有输入，双向绑定的说法就很奇怪。
