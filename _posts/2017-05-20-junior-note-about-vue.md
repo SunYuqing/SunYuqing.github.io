@@ -171,6 +171,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	* 这个指令有的时候非常有用。比如一些组件并不需要跟着数据变化而变化的时候。 
 * v-cloak
 	* 这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 `[v-cloak] { display: none } `一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。 
+
 ```
 	[v-cloak] {
 		  display: none;
@@ -201,7 +202,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 	> `$on`和`$once`绑定的事件是在实例上，而非DOM元素上，所以它们跟DOM原生的事件是两回事。DOM原生事件是在触发DOM元素特定事件时被触发的，比如`click`。但是对于这里的实例`vm`而言，`click`没有来源，实例根本不存在被`click`之说，所以`$on`和`$once`跟DOM原生事件扯不上任何关系。同理，`$emit`也是作用于实例之上，既然实例跟原生的DOM事件扯不上关系，那么`$emit`也就跟原生DOM事件扯不上关系了。
 所以说，`$on`和`$once`绑定的是一个自定义事件，这些事件是存储在vue内部的事件管理器中，跟DOM事件是两码事，既然如此，跟v-on事件绑定也就是两回事。
 
-	* **`$off`**
+	* **$off**
 		* 移除事件监听器。
 			* 如果没有提供参数，则移除所有的事件监听器；
 			* 如果只提供了事件，则移除该事件所有的监听器；
@@ -318,12 +319,12 @@ Vue.component('child', {
 上面不是说只能使用v-on绑定事件吗？是的，但是你是否还记得前文提到过v-model其实是v-bind和v-on的语法糖？上一节我们说过了，`<child>`可以使用v-bind，而这里又说可以使用v-on，所以只要情况允许，就可以使用v-model。
 
 所谓情况允许，是指符合下面条件：
-
 * 接受一个 value 属性
 * 在有新的 value 时触发 input 事件
+
 ```
 Vue.component('child', {
-  template: '<input :value="value" @keyup="update($event.target.value)">', // 
+  template: '<input :value="value" @keyup="update($event.target.value)">', 
   props: ['value'],
   methods: {
     update(value) {
@@ -345,7 +346,7 @@ Vue.component('child', {
 <child :value="someData" @input="someData = $event.target.value"></child>
 ```
 
-蓝色部分表示的是v-bind部分，红褐色部分表示v-on部分。组件内部，绿色的keyup是input元素的DOM原生事件，红色的udpate是回调函数，当keyup的时候执行update()，而update()的时候就`$emit('input')`，触发了父组件的`v-on:input`。
+组件内部，绿色的keyup是input元素的DOM原生事件，udpate是回调函数，当keyup的时候执行update()，而update()的时候就`$emit('input')`，触发了父组件的`v-on:input`。
 
 基于这种原理，不一定要使用在input输入框上，实际上，任何元素都可以模拟这种方式实现数据双向绑定。当然，如果没有输入，双向绑定的说法就很奇怪。
 
