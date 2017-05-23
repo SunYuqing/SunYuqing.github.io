@@ -84,7 +84,7 @@ watch是和data, methods, computed同级的一个参数，你可以在watch里�
 		<div v-for="(val, key, index) in object"></div>	 
 	```
 	* v-for 默认行为试着不改变整体，而是替换元素。迫使其重新排序的元素,需要提供一个 key 的特殊属性:
-	* ```<div v-for="item in items" :key="item.id">{{ item.text }</div>
+	* ```<div v-for="item in items" :key="item.id">{{ item.text }}</div>
 	```
 * v-bind / :
 	* ``` <!-- 绑定一个属性 -->
