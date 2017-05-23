@@ -18,9 +18,8 @@ description: 一个关于如何使用Vue建立一个web app的教程
 
 Vue 实例暴露了一些有用的实例属性与方法。这些属性与方法都有前缀 $，以便与代理的 data 属性区分。
 	
-```
-		app.$data === data // -> true
-```
+`app.$data === data // -> true`
+
 ### 3.app.$set
 
 你要知道一个事实：`app.$data.msg === app.msg`，而且由于vue的响应系统，所以你直接`app.msg = 'Let us go!'`和
