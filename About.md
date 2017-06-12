@@ -9,8 +9,13 @@ header-img: "img/plane.jpg"
     <p><img src="http://dreamofbook.qiniudn.com/Zero.png" align="center"></p>
 </center>
 
-我的邮箱： sunnyday0824@163.com
-我的Github: http://github.com/sunyuqing
+#### 我的邮箱： 
+
+sunnyday0824@163.com
+
+#### 我的Github: 
+
+http://github.com/sunyuqing
 
 
 
