@@ -11,11 +11,11 @@ header-img: "img/plane.jpg"
 
 #### 我的邮箱： 
 
-sunnyday0824@163.com
+> sunnyday0824@163.com
 
 #### 我的Github: 
 
-http://github.com/sunyuqing
+> http://github.com/sunyuqing
 
 
 
